@@ -1,0 +1,523 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#07111f">
+<title>AzDar Ads Watching | Afifa Usman</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+body{
+  font-family:Arial, sans-serif;
+  background:#07111f;
+  color:#f5f8ff;
+  padding:18px;
+  min-height:100vh;
+}
+.container{
+  max-width:850px;
+  margin:auto;
+}
+.header{
+  display:flex;
+  align-items:center;
+  gap:13px;
+  padding:20px;
+  background:#101d30;
+  border:1px solid #263a55;
+  border-radius:17px;
+  margin-bottom:20px;
+}
+.logo{
+  width:48px;
+  height:48px;
+  border-radius:14px;
+  background:linear-gradient(135deg,#00e5ff,#a855f7);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:25px;
+  color:#07111f;
+  font-weight:bold;
+}
+.brand h2{
+  font-size:20px;
+  letter-spacing:1px;
+}
+.brand p{
+  font-size:11px;
+  color:#00e5ff;
+  margin-top:5px;
+  letter-spacing:2px;
+}
+.status{
+  margin-left:auto;
+  color:#ffbd59;
+  font-size:11px;
+  font-weight:bold;
+}
+.welcome{
+  background:linear-gradient(120deg,#142b46,#17203b);
+  border:1px solid #294563;
+  padding:27px 22px;
+  border-radius:18px;
+  margin-bottom:18px;
+}
+.welcome small{
+  color:#00e5ff;
+  letter-spacing:2px;
+  font-size:11px;
+}
+.welcome h1{
+  font-size:27px;
+  margin:12px 0;
+}
+.welcome p{
+  color:#aebed2;
+  font-size:13px;
+  line-height:1.7;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  
+<style>
+.stats{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:14px;
+  margin-bottom:20px;
+}
+.card{
+  background:#101d30;
+  border:1px solid #263a55;
+  border-radius:16px;
+  padding:20px;
+  margin-bottom:18px;
+}
+.stat-label{
+  font-size:11px;
+  color:#9aacc3;
+  letter-spacing:1px;
+  font-weight:bold;
+}
+.stat-value{
+  font-size:25px;
+  font-weight:bold;
+  margin-top:12px;
+  color:#00e5ff;
+}
+.stat-note{
+  color:#8294aa;
+  font-size:11px;
+  margin-top:8px;
+}
+.section-title{
+  font-size:18px;
+  margin-bottom:18px;
+}
+.plan{
+  border:1px solid #344d70;
+  background:linear-gradient(135deg,#182b45,#111d31);
+  padding:18px;
+  border-radius:13px;
+}
+.plan-name{
+  color:#00e5ff;
+  font-size:17px;
+  font-weight:bold;
+  margin-bottom:15px;
+}
+.detail-row{
+  display:flex;
+  justify-content:space-between;
+  gap:10px;
+  padding:12px 0;
+  border-bottom:1px solid #293b53;
+  font-size:13px;
+}
+.detail-row:last-child{
+  border-bottom:none;
+}
+.detail-row span:first-child{
+  color:#9aacc3;
+}
+.detail-row strong{
+  text-align:right;
+}
+.processing{
+  color:#ffbd59;
+}
+.countdown{
+  font-size:25px;
+  font-weight:bold;
+  color:#00e5ff;
+  text-align:center;
+  padding:15px;
+  background:#091525;
+  border-radius:12px;
+  margin-top:15px;
+}
+.video-box{
+  overflow:hidden;
+  border-radius:13px;
+  background:#000;
+  border:1px solid #344d70;
+}
+.video-box iframe{
+  display:block;
+  width:100%;
+  aspect-ratio:16/9;
+  border:0;
+}
+.video-info{
+  color:#aebed2;
+  font-size:13px;
+  line-height:1.7;
+  margin:12px 0;
+}
+.progress-track{
+  height:11px;
+  background:#26364d;
+  border-radius:20px;
+  overflow:hidden;
+  margin:14px 0;
+}
+.progress-fill{
+  width:0%;
+  height:100%;
+  background:linear-gradient(90deg,#00e5ff,#a855f7);
+  transition:width .3s;
+}
+.progress-text{
+  display:flex;
+  justify-content:space-between;
+  font-size:12px;
+  color:#aebed2;
+}
+</style>
+
+<div class="header">
+  <div class="logo">A</div>
+  <div class="brand">
+    <h2>AZDAR ADS</h2>
+    <p>MEMBER DASHBOARD</p>
+  </div>
+  <div class="status" id="topStatus">PROCESSING</div>
+</div>
+
+<div class="welcome">
+  <small>MEMBER DASHBOARD</small>
+  <h1>Welcome, Afifa Usman</h1>
+  <p>Your AzDar Ads Watching account. Stay consistent and complete your daily viewing session.</p>
+</div>
+
+<div class="stats">
+  <div class="card">
+    <div class="stat-label">TOTAL EARNING</div>
+    <div class="stat-value">Rs. 0</div>
+    <div class="stat-note">Accumulated earnings</div>
+  </div>
+
+  <div class="card">
+    <div class="stat-label">DAILY EARNING</div>
+    <div class="stat-value">Rs. 0</div>
+    <div class="stat-note">Current 24-hour cycle</div>
+  </div>
+</div>
+
+<div class="card">
+  <h2 class="section-title">✦ Membership Details</h2>
+
+  <div class="plan">
+    <div class="plan-name">STANDARD PLAN</div>
+
+    <div class="detail-row">
+      <span>MEMBERSHIP</span>
+      <strong>Standard</strong>
+    </div>
+
+    <div class="detail-row">
+      <span>DAILY REWARD</span>
+      <strong>Rs. 1,500</strong>
+    </div>
+
+    <div class="detail-row">
+      <span>VIDEO DURATION</span>
+      <strong>2 Minutes Required</strong>
+    </div>
+
+    <div class="detail-row">
+      <span>VIDEO LENGTH</span>
+      <strong>5 Minutes</strong>
+    </div>
+
+    <div class="detail-row">
+      <span>DAILY ACCESS</span>
+      <strong>24 Hours</strong>
+    </div>
+
+    <div class="detail-row">
+      <span>ACCOUNT STATUS</span>
+      <strong class="processing" id="accountStatus">Processing</strong>
+    </div>
+  </div>
+
+  <div style="margin-top:20px;color:#aebed2;font-size:12px;text-align:center">
+    Activation countdown
+  </div>
+  <div class="countdown" id="countdown">24:00:00</div>
+</div>
+
+<div class="card">
+  <h2 class="section-title">▶ Daily Video</h2>
+
+  <div style="color:#00e5ff;font-size:12px;font-weight:bold;margin-bottom:10px">
+    VIDEO 01 — NATURE & WATERFALL
+  </div>
+
+  <p class="video-info">
+    Enjoy a beautiful five-minute nature video.
+    Watch for at least 2 minutes to complete the required viewing session.
+  </p>
+
+  <div id="videoLocked" style="background:#091525;padding:28px 15px;text-align:center;border-radius:13px;color:#ffbd59">
+    <div style="font-size:35px">🔒</div>
+    <h3 style="margin:12px 0">Video Locked</h3>
+    <p style="font-size:12px;color:#aebed2">
+      Your video will unlock after account activation.
+    </p>
+  </div>
+
+  <div id="videoArea" style="display:none">
+    <div class="video-box">
+      <div id="player"></div>
+    </div>
+  </div>
+
+  <div style="margin-top:20px">
+    <div class="progress-text">
+      <span id="watchTime">0 / 120 seconds</span>
+      <span id="watchPercent">0%</span>
+    </div>
+
+    <div class="progress-track">
+      <div class="progress-fill" id="progressBar"></div>
+    </div>
+
+    <p class="video-info" id="videoMessage">
+      Your daily video is currently locked.
+    </p>
+  </div>
+</div>
+
+<div class="card">
+  <h2 class="section-title">👤 Payment Account Details</h2>
+
+  <div class="plan">
+    <div class="plan-name">JAZZCASH ACCOUNT</div>
+
+    <div class="detail-row">
+      <span>ACCOUNT TITLE</span>
+      <strong>Afifa Usman</strong>
+    </div>
+
+    <div class="detail-row">
+      <span>ACCOUNT NAME</span>
+      <strong>JazzCash</strong>
+    </div>
+
+    <div class="detail-row">
+      <span>ACCOUNT NUMBER</span>
+      <strong>03074647569</strong>
+    </div>
+  </div>
+</div>
+
+<div style="text-align:center;padding:20px 10px;color:#8294aa;font-size:12px;line-height:1.8">
+  <strong style="color:#00e5ff;letter-spacing:2px">AZDAR WEB STUDIO</strong>
+  <br>
+  Your Vision, Our Code.
+  <br>
+  © 2026 AzDar Web Studio. All Rights Reserved.
+</div>
+
+</div>
+
+<script>
+const ACTIVATION_KEY = "afifa_activation_start";
+const WATCH_KEY = "afifa_watch_progress";
+const COMPLETE_KEY = "afifa_watch_complete";
+
+let activationStart = localStorage.getItem(ACTIVATION_KEY);
+
+if(!activationStart){
+  activationStart = Date.now();
+  localStorage.setItem(ACTIVATION_KEY,activationStart);
+}
+
+activationStart = Number(activationStart);
+
+const activationDuration = 24 * 60 * 60 * 1000;
+
+let watched = Number(localStorage.getItem(WATCH_KEY) || 0);
+let completed = localStorage.getItem(COMPLETE_KEY) === "yes";
+
+function updateActivation(){
+  const remaining = Math.max(
+    0,
+    activationStart + activationDuration - Date.now()
+  );
+
+  if(remaining <= 0){
+    document.getElementById("countdown").textContent =
+      "ACTIVATED";
+
+    document.getElementById("accountStatus").textContent =
+      "Active";
+
+    document.getElementById("topStatus").textContent =
+      "ACTIVE";
+
+    document.getElementById("videoLocked").style.display =
+      "none";
+
+    document.getElementById("videoArea").style.display =
+      "block";
+
+    document.getElementById("videoMessage").textContent =
+      "Your daily video is now available. Watch at least 2 minutes.";
+
+    loadYouTube();
+    return;
+  }
+
+  const hours = Math.floor(remaining / 3600000);
+  const minutes = Math.floor((remaining % 3600000) / 60000);
+  const seconds = Math.floor((remaining % 60000) / 1000);
+
+  document.getElementById("countdown").textContent =
+    String(hours).padStart(2,"0") + ":" +
+    String(minutes).padStart(2,"0") + ":" +
+    String(seconds).padStart(2,"0");
+}
+
+function updateProgress(){
+  watched = Math.min(120,watched);
+
+  document.getElementById("watchTime").textContent =
+    watched + " / 120 seconds";
+
+  const percent = Math.round((watched / 120) * 100);
+
+  document.getElementById("watchPercent").textContent =
+    percent + "%";
+
+  document.getElementById("progressBar").style.width =
+    percent + "%";
+
+  if(watched >= 120){
+    completed = true;
+    localStorage.setItem(COMPLETE_KEY,"yes");
+
+    document.getElementById("videoMessage").textContent =
+      "Viewing target completed for this browser session.";
+  }
+}
+
+updateProgress();
+updateActivation();
+setInterval(updateActivation,1000);
+</script>
+
+<script>
+let player;
+let previousTime = 0;
+let playerReady = false;
+
+function loadYouTube(){
+  if(completed || playerReady) return;
+
+  if(window.YT && window.YT.Player){
+    createPlayer();
+    return;
+  }
+
+  if(!document.getElementById("youtubeAPI")){
+    const tag = document.createElement("script");
+    tag.id = "youtubeAPI";
+    tag.src = "https://www.youtube.com/iframe_api";
+    document.head.appendChild(tag);
+  }
+}
+
+window.onYouTubeIframeAPIReady = function(){
+  createPlayer();
+};
+
+function createPlayer(){
+  if(playerReady || completed) return;
+
+  playerReady = true;
+
+  player = new YT.Player("player",{
+    width:"100%",
+    height:"100%",
+    videoId:"2lnxIdOTxog",
+    playerVars:{
+      playsinline:1,
+      rel:0
+    },
+    events:{
+      onReady:function(){
+        updateProgress();
+      },
+      onStateChange:function(event){
+        if(event.data === YT.PlayerState.PLAYING){
+          previousTime = player.getCurrentTime();
+        }
+      }
+    }
+  });
+}
+
+setInterval(function(){
+  if(!player || !player.getPlayerState) return;
+
+  if(player.getPlayerState() !== YT.PlayerState.PLAYING) return;
+
+  if(completed) return;
+
+  const current = player.getCurrentTime();
+  const difference = current - previousTime;
+
+  if(difference > 0 && difference <= 2){
+    watched = Math.min(120,watched + difference);
+
+    localStorage.setItem(
+      WATCH_KEY,
+      Math.floor(watched)
+    );
+
+    updateProgress();
+  }
+
+  previousTime = current;
+
+},1000);
+
+if(completed){
+  document.getElementById("videoMessage").textContent =
+    "Viewing target already completed.";
+}
+</script>
+
+</body>
+</html>
